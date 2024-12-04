@@ -1,0 +1,265 @@
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 90%;
+  height: 100%;
+  /* margin-bottom: 30px; */
+  padding-bottom: 20px;
+}
+
+.projects-header {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.tags-container {
+  padding: 15px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tags-header {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.tag-personal {
+  background-color: rgb(198, 226, 245);
+  border-radius: 7px;
+  padding: 5px;
+}
+
+.tag-work {
+  background-color: rgb(247, 237, 172);
+  border-radius: 7px;
+  padding: 5px;
+}
+
+.tag-about {
+  margin-top: 5px;
+}
+
+.projects-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  width: 100%;
+  grid-gap: 20px;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+  width: calc(45% - 20px);
+  background-color: white;
+  padding: 10px;
+  align-items: flex-start;
+  border: 1px dashed rgb(205, 216, 179);
+}
+
+.project-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* justify-content: space-between; */
+  grid-gap: 20px;
+  height: 100%;
+}
+
+.project-header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.project-header-text {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.project-text {
+  font-size: 18px;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.project-logo {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.project-logo-container {
+  padding: 10px;
+}
+
+.tag-personal,
+.tag-work {
+  padding: 1px 1px 1px 3px;
+  width: 80px;
+  font-weight: 400;
+  display: flex;
+  font-size: 16px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.project-buttons-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  grid-gap: 20px;
+}
+
+.project-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  background-color: rgb(205, 216, 179);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: "Gaegu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+}
+
+.project-button:hover {
+  transform: scale(1.1);
+}
+
+.project-button:active {
+  transform: scale(0.9);
+}
+
+/* rgb(204, 221, 249); */
+/* rgb(170, 202, 144); */
+/* rgb(254, 235, 235); */
+/* rgb(255, 235, 192); */
+
+/* iPad styles */
+@media (max-width: 768px) {
+  .projects-header {
+    font-size: 25px;
+  }
+
+  .project-header {
+    font-size: 25px;
+    width: 95%;
+    margin: auto;
+  }
+
+  .projects-wrapper {
+    grid-gap: 15px;
+    width: 95%;
+  }
+
+  .project-container {
+    width: calc(100% - 30px);
+  }
+
+  .project-header-text {
+    font-size: 22px;
+  }
+
+  .project-text {
+    font-size: 16px;
+  }
+
+  .project-logo {
+    width: 120px;
+  }
+
+  .project-logo-container {
+    height: 120px;
+    width: 120px;
+  }
+
+  .project-button {
+    width: 90px;
+    height: 25px;
+    font-size: 16px;
+  }
+
+  .project-buttons-wrapper {
+    height: 40px;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+  .projects-header {
+    font-size: 22px;
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+  }
+
+  .tags-container {
+    margin-bottom: 20px;
+  }
+
+  .projects-wrapper {
+    grid-gap: 10px;
+  }
+
+  .project-container {
+    width: calc(100% - 20px);
+    padding: 5px;
+  }
+
+  .project-header-text {
+    font-size: 18px;
+  }
+
+  .project-text {
+    font-size: 14px;
+  }
+
+  .project-logo {
+    width: 100px;
+  }
+
+  .project-logo-container {
+    height: 100px;
+    width: 100px;
+  }
+
+  .project-button {
+    width: 80px;
+    height: 20px;
+    font-size: 14px;
+  }
+
+  .project-buttons-wrapper {
+    height: 30px;
+  }
+}

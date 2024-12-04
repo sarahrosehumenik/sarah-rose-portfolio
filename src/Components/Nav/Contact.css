@@ -1,0 +1,44 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 100px;
+  position: absolute;
+  background-color: rgb(205, 216, 179);
+  left: 130px;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.contact-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 50%;
+  width: 90%;
+  border-radius: 50px;
+}
+
+.contact-header {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    left: 50px;
+    top: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    left: 10px;
+    top: 60px;
+  }
+}

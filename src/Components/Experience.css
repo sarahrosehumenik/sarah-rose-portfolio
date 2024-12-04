@@ -1,0 +1,115 @@
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 30px auto;
+  background-color: white;
+}
+
+.experience-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: calc(90% - 20px);
+  grid-gap: 20px;
+  padding: 10px;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  grid-gap: 3px;
+  width: 100%;
+  margin-bottom: 10px;
+  border-bottom: 7px dashed #cdd8b3;
+}
+
+.experience-header {
+  font-size: 30px;
+  font-weight: 700;
+  border: 7px dashed rgb(205, 216, 179);
+  text-align: center;
+}
+
+.employer-name {
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #e5f2c5;
+  padding: 3px 5px 3px 5px;
+  border-radius: 5px;
+}
+
+.job-title {
+  font-style: italic;
+  font-size: 18px;
+}
+
+.job-description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  grid-gap: 10px;
+  padding: 10px;
+  margin: auto;
+  width: calc(95% - 20px);
+}
+
+.experience-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  grid-gap: 5px;
+  line-height: 1.5;
+}
+.carrot-icon {
+  height: 26px;
+  border-radius: 50%;
+}
+
+.carrot-icon.jiggle {
+  display: inline-block;
+  animation: jiggleAnimationCarrot 2s infinite;
+  cursor: pointer;
+  border: 2px solid rgb(205, 216, 179);
+}
+
+.skills-info {
+  width: calc(95% - 60px);
+  margin: 20px auto;
+  border: 7px dashed rgb(205, 216, 179);
+  padding: 20px;
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 10px;
+}
+
+@keyframes jiggleAnimationCarrot {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.7) rotate(3deg);
+  }
+  40% {
+    transform: scale(1.7) rotate(-3deg);
+  }
+  60% {
+    transform: scale(1.7) rotate(3deg);
+  }
+  80% {
+    transform: scale(1.7) rotate(-3deg);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

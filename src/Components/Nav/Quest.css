@@ -1,0 +1,98 @@
+.quest-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 100px;
+  position: absolute;
+  background-color: rgb(205, 216, 179);
+  right: 250px;
+  width: 300px;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.open {
+  max-height: 550px; /* Adjust as needed based on content height */
+  opacity: 1;
+}
+
+.closed {
+  max-height: 0;
+}
+
+.quest-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  padding: 10px;
+  background-color: white;
+  border-radius: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.quest-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.quest-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 20px);
+  padding: 10px;
+  border-top: 1px dashed rgb(255, 255, 255);
+  height: 50px;
+  grid-gap: 10px;
+}
+
+.quest-task {
+  width: 200px;
+  font-weight: 400;
+}
+.reward-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 60px;
+  padding-left: 5px;
+  border-radius: 30px;
+}
+
+.completed-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(229, 242, 197);
+  width: 60px;
+  border-radius: 30px;
+}
+
+.carrot-quest-icon {
+  height: 30px;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .quest-container {
+    top: 80px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .quest-container {
+    top: 60px;
+    right: 10px;
+  }
+}

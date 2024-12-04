@@ -1,0 +1,123 @@
+.professional-info,
+.skills-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 70%;
+  margin-top: 50px;
+}
+
+.professional-header {
+  font-size: 30px;
+  font-weight: 600;
+  background-color: rgb(229, 242, 197);
+  border-radius: 10px;
+}
+
+.professional-text-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+.professional-text {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.computer {
+  height: 220px;
+  border-radius: 50%;
+}
+
+.professional-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  border-radius: 80px;
+  position: relative;
+  width: 20%;
+}
+
+.skill-list {
+  width: 100%;
+  margin: 20px auto;
+  line-height: 2;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .pro-container {
+    flex-direction: column;
+    width: 100%;
+    overflow-y: scroll;
+  }
+
+  .professional-info,
+  .skills-info {
+    width: 100%;
+  }
+
+  .professional-header {
+    font-size: 26px;
+  }
+
+  .professional-text {
+    font-size: 16px;
+  }
+
+  .skill-list {
+    width: 80%;
+    font-size: 16px;
+  }
+
+  .logo {
+    height: 100px;
+  }
+
+  .node {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .pro-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .professional-info,
+  .skills-info {
+    width: 100%;
+  }
+
+  .professional-header {
+    font-size: 22px;
+  }
+
+  .professional-text {
+    font-size: 14px;
+  }
+
+  .skill-list {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .logo,
+  .node {
+    height: 80px;
+  }
+}

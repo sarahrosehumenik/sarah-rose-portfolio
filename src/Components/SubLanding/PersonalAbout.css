@@ -1,0 +1,192 @@
+.family-image {
+  max-height: 200px;
+  border-radius: 50%;
+}
+
+.personal-header {
+  font-size: 22px;
+  font-weight: 600;
+  background-color: rgb(229, 242, 197);
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.personal-text {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: center;
+  width: 90%;
+}
+
+.personal-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.image-poll-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+}
+
+.image-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poll-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+
+.poll-text {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  height: 20%;
+}
+
+.poll-buttons {
+  width: 210px;
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 10px;
+  margin-top: 10px;
+}
+
+.poll-button {
+  width: 100px;
+  height: 30px;
+  border-radius: 30px;
+  border: none;
+  background: rgb(229, 242, 197);
+  font-family: "Gaegu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.poll-button:hover {
+  transform: scale(1.1);
+}
+.poll-button:active {
+  transform: scale(0.9);
+}
+
+.poll-button:disabled {
+  transform: none;
+}
+
+@media (max-width: 900px) {
+  .personal-header {
+    font-size: 20px;
+  }
+
+  .personal-text {
+    font-size: 16px;
+  }
+
+  .personal-text-container,
+  .image-container,
+  .poll-container {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .image-poll-wrapper {
+    width: 90%;
+  }
+
+  .family-image {
+    max-height: 200px;
+  }
+
+  .poll-buttons {
+    width: 180px;
+  }
+
+  .poll-button {
+    width: 80px;
+    height: 25px;
+    font-size: 16px;
+  }
+  .personal-container {
+    margin-top: 70px;
+  }
+}
+/* iPhone styles */
+@media (max-width: 480px) {
+  .personal-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+  }
+
+  .personal-header {
+    font-size: 20px;
+  }
+
+  .personal-text {
+    font-size: 14px;
+  }
+
+  .personal-text-container {
+    grid-gap: 15px;
+    height: 65%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .personal-text-container,
+  .poll-container {
+    width: 100%;
+    /* margin: 10px 0; */
+  }
+
+  .image-poll-wrapper {
+    flex-direction: column;
+    width: 100%;
+    max-height: 25%;
+  }
+
+  .family-image {
+    display: none;
+  }
+
+  .image-container {
+    display: none;
+  }
+  .poll-text {
+    font-size: 18px;
+  }
+
+  .poll-container {
+    padding: 0;
+  }
+
+  .poll-buttons {
+    width: 160px;
+  }
+
+  .poll-button {
+    width: 70px;
+    height: 20px;
+    font-size: 14px;
+  }
+}
