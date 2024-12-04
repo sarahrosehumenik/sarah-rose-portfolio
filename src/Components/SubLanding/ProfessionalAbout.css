@@ -96,11 +96,17 @@
   .pro-container {
     flex-direction: column;
     width: 100%;
+    height: 100%;
   }
 
   .professional-info,
   .skills-info {
-    width: 100%;
+    width: 90%;
+    height: 100%;
+  }
+
+  .professional-logo-container {
+    height: 0;
   }
 
   .professional-header {
@@ -119,5 +125,8 @@
   .logo,
   .node {
     height: 80px;
+  }
+  .computer {
+    display: none;
   }
 }

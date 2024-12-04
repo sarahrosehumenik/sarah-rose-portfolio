@@ -178,6 +178,7 @@
 
   .poll-container {
     padding: 0;
+    grid-gap: 20px;
   }
 
   .poll-buttons {
