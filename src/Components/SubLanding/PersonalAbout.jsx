@@ -33,7 +33,7 @@ export default function PersonalAbout({ completeQuest, quests }) {
   <>
    <div className="personal-text-container">
     <div className="personal-header">Whats the scoop?</div>
-    <div className="personal-text">My Husband and I are both <strong className="highlight-two">Remote ^_^</strong> Software developers based on the east-ish coast in a cozy home inside of a state forest with our <strong className="highlight-one">6 cats</strong>.
+    <div className="personal-text">My Husband and I are both <strong className="highlight-two">Remote ^_^</strong> Software developers based on the east-ish coast in a cozy home inside of a state forest with our <strong className="highlight-one">7 cats</strong>.
      After saying good bye to our senior cat named Bubba last year, he inspired us to adopt other cats in need.
      We call our home <strong>"The Bubba Cat Sancturary😺"</strong>. Beyound litter boxes and catnip, I am an Avid <strong className="highlight-four">gamer</strong> on my custom built PC.
      Primarily in the Life Sim realm with a sprinkle of fortnite. Since we live in a Forest, of course
